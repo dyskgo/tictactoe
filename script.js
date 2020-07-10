@@ -38,10 +38,10 @@ const game = (function() {
         for (i = 0; i <= 2; i++) {
             for (j = 0; j <= 2; j++) {
                 if (gameboard.grid[i][j] === 'X' || gameboard.grid[i][j] === 'O') {
-                document.getElementById(`${i}${j}`).innerHTML = gameboard.grid[i][j];
-            } else {
-                document.getElementById(`${i}${j}`).innerHTML = '';
-            }   
+                    document.getElementById(`${i}${j}`).innerHTML = gameboard.grid[i][j];
+                } else {
+                    document.getElementById(`${i}${j}`).innerHTML = '';
+                }   
             }
         }
     };  
